@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header">  
         <div class="logo">
-        <img src="./assets/Logo cafe.webp" alt="Logo-coffee">
-        </div>
-        <nav id="nav-bar">
+            <img src="./assets/Logo cafe.webp" alt="Logo-coffee" width="100px" height="100px">
+        </div>     
+        <nav id="nav-bar">           
             <ul>
                 <li>
                   <a class="nav-link" href="#nosotros">Nosotros</a>
@@ -27,7 +27,7 @@
     </header>
     <section class="hero">
         <h1>Let us help you make Latte Art</h1>
-        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/463tZXEDhig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <div class="video"><iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/463tZXEDhig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div> 
     </section>
     <main>
         <section id="nosotros">
@@ -39,19 +39,10 @@
             <p>¡Únete a nosotros en este apasionante viaje cafetero! Explora nuestro catálogo de cafés de especialidad, descubre nuevas notas y sabores, y déjate seducir por la magia que reside en cada grano. Te invitamos a ser parte de nuestra comunidad y a compartir esta pasión por el café excepcional.</p>
         </section>
         <section id="productos">
+            <h2>Nuestros productos</h2>
             <div class="card">
                 <figure>
-                    <img src="./assets/producto 1.webp" alt="cafe brasil">
-                </figure>
-                <div class="contenido">
-                    <h3>Café brasileño</h3>
-                    <p>Brasil es uno de los mayores productores de café a nivel mundial y es conocido por su café dulce, con un cuerpo completo y notas de nueces y chocolate. El café brasileño, en su mayoría del tipo robusta, se utiliza ampliamente en mezclas y en la producción de café instantáneo.</p>
-                    <a href="#">Consultar precio</a>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="./assets/producto 2.jpeg" alt="cafe colombiano">
+                    <img src="./assets/producto 1_Mesa de trabajo 1.png" alt="cafe colombiano">
                 </figure>
                 <div class="card__content">
                     <h3>Café colombiano</h3>
@@ -61,23 +52,35 @@
             </div>
             <div class="card">
                 <figure>
-                    <img src="./assets/producto 3.webp" alt="cafe etíope">
+                    <img src="./assets/Sin título-12png_Mesa de trabajo 1.png" alt="cafe colombiano">
                 </figure>
-                <div class="contenido">
-                    <h3>Café etíope</h3>
-                    <p>Etiopía es considerada la cuna del café y es conocida por su diversidad de sabores y aromas. Los cafés etíopes suelen tener notas florales, afrutadas y especiadas. El café etíope es apreciado por su complejidad y su rica historia en la cultura del café.</p>
+                <div class="card__content">
+                    <h3>Café colombiano</h3>
+                    <p>El café colombiano es famoso en todo el mundo por su suavidad y acidez equilibrada. Se cultiva en las tierras altas de Colombia y se destaca por sus sabores a frutas, caramelo y chocolate. Es reconocido como uno de los mejores cafés arábica del mundo.</p>
+                    <a href="#">Consultar precio</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="./assets/Sin título-3_Mesa de trabajo 1.png" alt="cafe colombiano">
+                </figure>
+                <div class="card__content">
+                    <h3>Café colombiano</h3>
+                    <p>El café colombiano es famoso en todo el mundo por su suavidad y acidez equilibrada. Se cultiva en las tierras altas de Colombia y se destaca por sus sabores a frutas, caramelo y chocolate. Es reconocido como uno de los mejores cafés arábica del mundo.</p>
                     <a href="#">Consultar precio</a>
                 </div>
             </div>
         </section>
-        <section id="contacto">
-            <form action="https://www.freecodecamp.com/email-submit">
+        <div class="formulario">
+            <section id="contacto">
+             <form action="https://www.freecodecamp.com/email-submit">
                 <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
                 <input type="email" required placeholder="Escribe tu email">
                 <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Escribe tu consulta"></textarea>
-                <input type="submit">
-            </form>
-        </section>
+                <input type="submit" class="btn">
+             </form>
+             </section>
+         </div>
     </main>
 </body>
 </html>

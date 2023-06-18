@@ -1,32 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=PT+Sans&family=Roboto:wght@400;700&family=Rock+Salt&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.nav-bar {
-  position: fixed;
+body {
+  color: hsl(40, 30%, 80%);
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom, hsl(30, 40%, 40%), hsl(25, 30%, 20%));
 }
 
-.productos {
+header {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+header div {
+  width: 60vw;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  transition: all 400ms ease;
+  list-style: none;
+}
+nav ul li:hover {
+  transform: translateY(-5%);
+}
+nav ul li a {
+  font-weight: bold;
+  color: hsl(25, 30%, 20%);
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.hero {
+  margin-top: 85px;
+  text-align: center;
+  padding: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(https://assets.epicurious.com/photos/63e54a0664e14d52936a2937/16:9/w_2560%2Cc_limit/CoffeeSubscriptions_IG_V1_030922_6350_V1_final.jpg);
+}
+.hero h1 {
+  color: hsl(40, 30%, 80%);
+  margin-bottom: 20px;
+}
+
+.video {
+  transition: all 400ms ease;
+}
+.video:hover {
+  transform: rotate(3deg);
+}
+
+#nosotros {
+  padding: 1em;
+}
+#nosotros h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+#productos {
+  padding: 1em;
   width: 100%;
   max-width: 1100px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card {
-  width: 100%;
+  width: 250%;
+  max-width: 400px;
   margin: 20px;
   border-radius: 6px;
   overflow: hidden;
-  background-color: hsl(20, 50%, 40%);
+  background-color: hsl(25, 30%, 20%);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
 }
 .card img {
   width: 100%;
-  height: 210px;
+  height: auto;
 }
 .card__content {
   padding: 15px;
@@ -38,15 +107,14 @@
 }
 .card__content p {
   line-height: 1.5;
-  color: hsl(30, 70%, 20%);
 }
 .card__content a {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
   margin-top: 10px;
-  color: hsl(10, 50%, 40%);
-  border: 1px solid black;
+  color: hsl(40, 30%, 80%);
+  border: 1px solid hsl(40, 30%, 80%);
   border-radius: 4px;
   transition: all 400ms ease;
 }
@@ -57,6 +125,52 @@
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
+}
+
+#contacto {
+  margin: 0 10% 0 10%;
+  width: 80%;
+  max-width: 600px;
+  background-color: hsl(30, 40%, 40%);
+  border-radius: 10px;
+  height: 450px;
+  padding: 2em;
+}
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contacto form input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0 15px 0;
+}
+
+#textarea {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: hsl(25, 30%, 20%);
+  padding: 10px;
+  color: hsl(40, 30%, 80%);
+  border: 1px solid hsl(40, 30%, 80%);
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-left: 50%;
+}
+.btn:hover {
+  background-color: green;
+  color: white;
+}
+
+@media screen and (min-width: 758px) {
+  #productos {
+    flex-flow: row, wrap;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
